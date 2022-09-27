@@ -63,6 +63,7 @@ header {
 
 .navbar__right form {
   color: var(--text-color-1);
+  font-family: "Quicksand", sans-serif;
 }
 
 .navbar__right input {
@@ -122,4 +123,71 @@ header {
   text-align: center;
   color: var(--white-color);
   padding: 0 8px;
+}
+
+.overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: rgb(6 3 0 / 77%);
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay .overlay__close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  border: none;
+  background-color: var(--orange-color);
+  color: white;
+  border-radius: var(--border-radius);
+}
+
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  transform: translateY(-50%);
+}
+.overlay nav > ul {
+  list-style: none;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+.overlay ul > li {
+  line-height: 3em;
+  backface-visibility: hidden;
+}
+
+.overlay li > a {
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.overlay li > a:hover {
+  color: #ff6600;
+  transition: all 0.2s;
+}
+
+.navOpen {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  transition: transform 0.4s, opacity 0.4s;
 }

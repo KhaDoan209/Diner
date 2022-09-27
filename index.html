@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./img/fav-icon.png" type="image/x-icon" />
         <title>Diner Restaurant</title>
 
         <!-- Bootstrap 4.6 -->
@@ -29,7 +30,7 @@
         <header>
             <div class="container">
                 <div class="header">
-                    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between">
+                    <nav class="navbar navbar-expand-lg d-flex justify-content-between">
                         <h1><a class="navbar__left navbar-brand" href="#">Diner</a></h1>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
                             aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,6 +51,24 @@
                             <button id="navbar__toggle"><i class="fa-solid fa-bars"></i></button>
                         </div>
                     </div>
+                    <div id="overlayNavbar" class="overlay">
+                        <button id="navbar__close" type="button" class="overlay__close"><i class="fa fa-times"
+                                aria-hidden="true"></i>
+                        </button>
+                        <nav>
+                            <ul>
+                                <li><a href="#" class="active">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">404</a></li>
+                                <li><a href="#">Landing Page</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Shot Codes</a></li>
+                                <li><a href="#">Email</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </header>
@@ -64,6 +83,8 @@
         <footer></footer>
 
 
+        <!-- Main JavaScript -->
+        <script src="./js/index.js"></script>
 
         <!-- Jquery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
