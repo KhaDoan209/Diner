@@ -1,8 +1,125 @@
 /* Common CSS */
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+:root {
+  --orange-color: #ff6600;
+  --border-radius: 6px;
+  --bg-color: #232220;
+  --text-color-1: #c2d0da;
+  --white-color: #ffff;
+}
+
+/* Nav Bar */
+header {
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      var(--orange-color),
+      hsl(30deg 100% 1% / 20%)
+    ),
+    url(../img/banner1.jpg);
+  background-repeat: no-repeat;
+  min-height: 700px;
+  background-position: initial;
+  background-attachment: fixed;
+}
+
+.header {
+  padding: 40px 0 20px 0;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.navbar {
+  background-color: transparent;
+}
+
+.navbar h1 {
+  width: 70%;
+}
+
+.navbar .navbar-brand {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+}
+
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar__right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 30%;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar__right form {
+  color: var(--text-color-1);
+}
+
+.navbar__right input {
+  display: flex;
+  flex: 1;
+  padding: 10px 50px 10px 20px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: var(--border-radius);
+  position: relative;
+  right: 0;
+  background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+}
+
+.navbar__right input:focus {
+  color: var(--text-color-1);
+  background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+  box-shadow: none;
+}
+
+.navbar__right form > i {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.navbar__lightMode {
+  width: 25px;
+  height: 25px;
+  line-height: 20px;
+  padding: 1px 0;
+}
+.navbar__lightMode i {
+  color: var(--white-color);
+  font-size: 25px;
+}
+
+.navbar__toggle {
+  width: 35px;
+  height: 35px;
+  padding: 1px 0;
+}
+.navbar__toggle i {
+  color: var(--white-color);
+  font-size: 35px;
+  line-height: 35px;
+}
+
+#navbar__toggle {
+  outline: none;
+  border: none;
+  background: none;
+  text-align: center;
+  color: var(--white-color);
+  padding: 0 8px;
+}
