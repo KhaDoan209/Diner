@@ -21,7 +21,7 @@ body {
 }
 
 .page__container {
-  width: 62%;
+  width: 75%;
   margin: auto;
 }
 
@@ -302,7 +302,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 600px;
+  min-height: 620px;
   position: relative;
   z-index: 1;
 }
@@ -326,6 +326,10 @@ header {
   line-height: 30px;
   letter-spacing: 1px;
   display: block;
+}
+
+.marketing__content h3{
+  color: white;
 }
 
 .marketing__content p {
@@ -357,6 +361,11 @@ header {
   margin-bottom: 15px;
   font-size: 20px;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.marketing__sub__item .sub__title:hover {
+  opacity: 0.9;
 }
 
 .marketing__sub__item p {
@@ -365,4 +374,71 @@ header {
 
 .marketing__sub__item:hover .sub__icon {
   color: #ffc600;
+}
+
+/* Category CSS  */
+
+.category__title .title{
+  color: var(--orange-color);
+}
+
+
+.item__img {
+  position: relative;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.item{
+transition: all 0.3s;
+}
+
+.item:hover{
+  opacity: 0.9;
+}
+
+.item__img img{
+  border-radius: var(--border-radius);
+}
+
+.item__img::after{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76) 100%);
+  content: "";
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: var(--border-radius);
+}
+
+.item__infor{
+  opacity:1;
+  transition: all 0.4s;
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  width: 95%;
+  transform: translate3d(0, 10%, 0);
+}
+
+.item__infor a{
+  text-decoration: none;
+}
+
+.item__infor a:hover{
+color: #4f9da6;
+}
+
+.item__infor h4{
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.item__infor h6{
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color:#ffc600;
 }
