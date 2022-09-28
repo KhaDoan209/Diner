@@ -16,10 +16,12 @@ body {
   --bg-color: #232220;
   --text-color-1: #c2d0da;
   --white-color: #ffff;
+  --quicksand: "Quicksand", sans-serif;
+  --pacifico: "Pacifico", cursive;
 }
 
 .page__container {
-  width: 65%;
+  width: 62%;
   margin: auto;
 }
 
@@ -27,19 +29,24 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
-  font-family: "Quicksand", sans-serif;
+h5 {
+  font-family: var(--quicksand);
   color: white;
 }
 
 .title {
-  font-family: "Pacifico", cursive;
+  font-family: var(--pacifico);
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   display: block;
   letter-spacing: 1px;
+}
+
+.title__2 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
 }
 
 .button {
@@ -104,7 +111,7 @@ header {
 
 .navbar__right form {
   color: var(--text-color-1);
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--quicksand);
 }
 
 .navbar__right input {
@@ -261,7 +268,7 @@ header {
 .about__left {
   text-align: left;
   padding: 0 15px;
-  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .about__left .title {
@@ -283,4 +290,79 @@ header {
   font-size: 18px;
   line-height: 28px;
   color: var(--text-color-1);
+}
+
+/* Marketing CSS  */
+.marketing {
+  background-color: var(--orange-color);
+}
+
+.marketing__img {
+  background: url(../img/banner3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+  z-index: 1;
+}
+
+.marketing__img::after {
+  content: "";
+  background: rgb(16 15 19 / 46%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  min-height: 100%;
+}
+
+.marketing__content h6 {
+  font-family: var(--pacifico);
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.marketing__content p {
+  color: #ffdfc9;
+  font-size: 18px;
+}
+
+.marketing__sub {
+  gap: 30px;
+}
+
+.marketing__sub__item .sub__icon {
+  background: white;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  color: var(--orange-color);
+  line-height: 70px;
+  font-size: 25px;
+  border-radius: var(--border-radius);
+  transition: all 0.25s;
+}
+
+.marketing__sub__item .sub__title {
+  display: block;
+  color: white;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.marketing__sub__item p {
+  color: #ffdfc9;
+}
+
+.marketing__sub__item:hover .sub__icon {
+  color: #ffc600;
 }
