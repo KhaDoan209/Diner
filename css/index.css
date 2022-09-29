@@ -91,11 +91,12 @@ header {
   width: 70%;
 }
 
-.navbar a{
+.navbar a {
   font-size: 36px;
   font-weight: 700;
   color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .navbar .navbar-collapse {
@@ -149,9 +150,18 @@ header {
   line-height: 20px;
   padding: 1px 0;
 }
+
 .navbar__lightMode i {
   color: var(--white-color);
   font-size: 25px;
+}
+
+.navbar__lightMode .fa-moon {
+  display: none;
+}
+
+.navbar__lightMode .fa-sun {
+  display: block;
 }
 
 .navbar__toggle {
@@ -264,6 +274,7 @@ header {
   color: var(--orange-color);
 }
 
+
 /* About Us CSS  */
 
 .about__left {
@@ -329,7 +340,7 @@ header {
   display: block;
 }
 
-.marketing__content h3{
+.marketing__content h3 {
   color: white;
 }
 
@@ -379,10 +390,10 @@ header {
 
 /* Category CSS  */
 
-.category{
+.category {
   background: #282828;
 }
-.category__title .title{
+.category__title .title {
   color: var(--orange-color);
 }
 
@@ -392,20 +403,25 @@ header {
   cursor: pointer;
 }
 
-.item{
-transition: all 0.3s;
+.item {
+  transition: all 0.3s;
 }
 
-.item:hover{
+.item:hover {
   opacity: 0.9;
 }
 
-.item__img img{
+.item__img img {
   border-radius: var(--border-radius);
 }
 
-.item__img::after{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76) 100%);
+.item__img::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.53) 69%,
+    rgba(0, 0, 0, 0.76) 100%
+  );
   content: "";
   width: 100%;
   height: 40%;
@@ -415,8 +431,8 @@ transition: all 0.3s;
   border-radius: var(--border-radius);
 }
 
-.item__infor{
-  opacity:1;
+.item__infor {
+  opacity: 1;
   transition: all 0.4s;
   position: absolute;
   bottom: 0;
@@ -425,30 +441,30 @@ transition: all 0.3s;
   transform: translate3d(0, 10%, 0);
 }
 
-.item__infor a{
+.item__infor a {
   text-decoration: none;
 }
 
-.item__infor a:hover{
-color: #4f9da6;
+.item__infor a:hover {
+  color: #4f9da6;
 }
 
-.item__infor h4{
+.item__infor h4 {
   font-size: 22px;
   line-height: 30px;
   font-weight: 700;
 }
 
-.item__infor h6{
+.item__infor h6 {
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 1px;
-  color:#ffc600;
+  color: #ffc600;
 }
 
 /* Features CSS */
 
-.item__wrap{
+.item__wrap {
   padding: 40px 40px;
   transition: all 0.5s ease 0s;
   border-radius: 8px;
@@ -459,12 +475,12 @@ color: #4f9da6;
   transition: all 0.3s;
 }
 
-.item__wrap:hover{
+.item__wrap:hover {
   cursor: pointer;
   box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
 }
 
-.item__header{
+.item__header {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 30px;
@@ -476,23 +492,22 @@ color: #4f9da6;
   line-height: 70px;
   color: var(--orange-color);
   text-align: center;
-  background-color:#282828;
+  background-color: #282828;
   border-radius: var(--border-radius);
   transition: all 0.3s;
-  
 }
-.item__header .header__icon i{
+.item__header .header__icon i {
   font-size: 25px;
 }
 
-.item__header .infor p{
+.item__header .infor p {
   font-size: 18px;
   line-height: 28px;
   color: var(--text-color-1);
   font-family: var(--quicksand);
 }
 
-.item__header .infor h4 a{
+.item__header .infor h4 a {
   font-size: 24px;
   font-weight: 600;
   margin-top: 5px;
@@ -500,14 +515,15 @@ color: #4f9da6;
   display: block;
   color: white;
   text-decoration: none;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.item__header .infor h4 a:hover{
+.item__header .infor h4 a:hover {
   color: var(--orange-color);
 }
 
-.item__content p{
+.item__content p {
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -516,9 +532,9 @@ color: #4f9da6;
   font-family: var(--quicksand);
 }
 
-.features__item:hover .header__icon{
+.features__item:hover .header__icon {
   background-color: var(--orange-color);
 }
-.features__item:hover .header__icon>i{
+.features__item:hover .header__icon > i {
   color: white;
 }
