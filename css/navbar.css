@@ -1,0 +1,220 @@
+@import url(./root.css);
+
+/* Nav Bar */
+header {
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      var(--orange-color),
+      hsl(30deg 100% 1% / 20%)
+    ),
+    url(../img/banner1.jpg);
+  background-repeat: no-repeat;
+  min-height: 700px;
+  background-position: initial;
+  background-attachment: fixed;
+}
+
+.header__head {
+  padding: 30px 0 20px 0;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar h1 {
+  width: 70%;
+}
+
+.navbar a {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar__right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 30%;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar__right form {
+  color: var(--text-color-1);
+  font-family: var(--quicksand);
+}
+
+.navbar__right input {
+  display: flex;
+  flex: 1;
+  padding: 10px 50px 10px 20px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: var(--border-radius);
+  position: relative;
+  right: 0;
+  background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+}
+
+.navbar__right input:focus {
+  color: var(--text-color-1);
+  background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+  box-shadow: none;
+}
+
+.navbar__right form > i {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.navbar__lightMode {
+  width: 25px;
+  height: 25px;
+  line-height: 20px;
+  padding: 1px 0;
+}
+
+.navbar__lightMode i {
+  color: var(--white-color);
+  font-size: 25px;
+}
+
+.navbar__lightMode .fa-moon {
+  display: none;
+}
+
+.navbar__lightMode .fa-sun {
+  display: block;
+}
+
+.navbar__toggle {
+  width: 35px;
+  height: 35px;
+  padding: 1px 0;
+}
+.navbar__toggle i {
+  color: var(--white-color);
+  font-size: 32px;
+  line-height: 35px;
+}
+
+#navbar__toggle {
+  outline: none;
+  border: none;
+  background: none;
+  text-align: center;
+  color: var(--white-color);
+  padding: 0 8px;
+}
+
+.overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: rgb(6 3 0 / 77%);
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay .overlay__close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  border: none;
+  background-color: var(--orange-color);
+  color: white;
+  border-radius: var(--border-radius);
+}
+
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  transform: translateY(-50%);
+}
+.overlay nav > ul {
+  list-style: none;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+.overlay ul > li {
+  line-height: 3em;
+  backface-visibility: hidden;
+}
+
+.overlay li > a {
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.overlay li > a:hover {
+  color: #ff6600;
+  transition: all 0.2s;
+}
+
+.navOpen {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.header__infor {
+  max-width: 600px;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.header__infor h3 {
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.header__infor p {
+  font-size: 16px;
+  color: white;
+}
+
+.header__infor .button:hover {
+  background-color: white;
+  color: var(--orange-color);
+}
+
+
+

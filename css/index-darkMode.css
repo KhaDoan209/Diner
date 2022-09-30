@@ -1,12 +1,4 @@
-:root {
-    --orange-color: #ff6600;
-    --border-radius: 6px;
-    --bg-color: #232220;
-    --text-color-1: #c2d0da;
-    --white-color: #ffff;
-    --quicksand: "Quicksand", sans-serif;
-    --pacifico: "Pacifico", cursive;
-  }
+@import url(./root.css);
 
 .darkMode{
     background-color: white;

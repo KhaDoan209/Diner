@@ -1,0 +1,85 @@
+@import url(/css/root.css);
+
+/* Marketing CSS  */
+.marketing {
+    background-color: var(--orange-color);
+  }
+  
+  .marketing__img {
+    background: url(../img/banner3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 620px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .marketing__img::after {
+    content: "";
+    background: rgb(16 15 19 / 46%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    min-height: 100%;
+  }
+  
+  .marketing__content h6 {
+    font-family: var(--pacifico);
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    display: block;
+  }
+  
+  .marketing__content h3 {
+    color: white;
+  }
+  
+  .marketing__content p {
+    color: #ffdfc9;
+    font-size: 18px;
+  }
+  
+  .marketing__sub {
+    gap: 30px;
+  }
+  
+  .marketing__sub__item .sub__icon {
+    background: white;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    color: var(--orange-color);
+    line-height: 70px;
+    font-size: 25px;
+    border-radius: var(--border-radius);
+    transition: all 0.25s;
+  }
+  
+  .marketing__sub__item .sub__title {
+    display: block;
+    color: white;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .marketing__sub__item .sub__title:hover {
+    opacity: 0.9;
+  }
+  
+  .marketing__sub__item p {
+    color: #ffdfc9;
+  }
+  
+  .marketing__sub__item:hover .sub__icon {
+    color: #ffc600;
+  }

@@ -1,0 +1,31 @@
+@import url(./root.css);
+
+/* About Us CSS  */
+
+.about__left {
+    text-align: left;
+    padding: 0 15px;
+    padding-right: 3rem;
+  }
+  
+  .about__left .title {
+    color: var(--orange-color);
+  }
+  
+  .about__left h3 {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+  }
+  
+  .about__right {
+    padding: 0 15px;
+  }
+  
+  .about__right p {
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color-1);
+  }
+  
