@@ -10,7 +10,7 @@ header {
     ),
     url(../img/banner1.jpg);
   background-repeat: no-repeat;
-  min-height: 700px;
+  min-height: 600px;
   background-position: initial;
   background-attachment: fixed;
 }
@@ -216,5 +216,45 @@ header {
   color: var(--orange-color);
 }
 
+@media screen and (max-width: 992px) {
+  .header__infor h3 {
+    font-size: 44px;
+    line-height: 53px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header .container{
+    margin-top: 60px;
+  }
+}
 
 
+@media screen and (max-width: 600px) {
+  .navbar__right .navbar__search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page__container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header{
+    min-height: 450px;
+  }
+  .header__infor{
+    max-width: 500px;
+    margin-top: 30px;
+  }
+  .header__infor h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .header__infor .button {
+    padding: 10px 21px;
+  }
+}

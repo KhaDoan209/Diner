@@ -19,11 +19,6 @@
     --pacifico: "Pacifico", cursive;
   }
 
-.page__container {
-    width: 75%;
-    margin: auto;
-  }
-  
   h1,
   h2,
   h3,
