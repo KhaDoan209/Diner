@@ -10,7 +10,7 @@ header {
     ),
     url(../img/banner1.jpg);
   background-repeat: no-repeat;
-  min-height: 600px;
+  min-height: 700px;
   background-position: initial;
   background-attachment: fixed;
 }
@@ -216,6 +216,13 @@ header {
   color: var(--orange-color);
 }
 
+@media screen and (max-width: 1190px){
+  .header__infor h3 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .header__infor h3 {
     font-size: 44px;
@@ -224,6 +231,9 @@ header {
 }
 
 @media screen and (max-width: 800px) {
+  header{
+    min-height: 600px;
+  }
   header .container{
     margin-top: 60px;
   }
