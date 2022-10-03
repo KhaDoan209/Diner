@@ -77,3 +77,20 @@
     color: white;
   }
   
+  /* Features Responsive */
+
+  @media screen and (max-width:1080px) {
+    .item__header .infor h4 a{
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width:600px) {
+    .item__header .infor p{
+      font-size: 16px;
+    }
+    .item__content p{
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
