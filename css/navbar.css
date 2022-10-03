@@ -216,6 +216,8 @@ header {
   color: var(--orange-color);
 }
 
+/* Header Responsive  */
+
 @media screen and (max-width: 1190px){
   .header__infor h3 {
     font-size: 48px;
