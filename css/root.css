@@ -52,3 +52,29 @@
     border: 2px solid;
     border-radius: var(--border-radius);
   }
+
+  .backToTop .button{
+    background-color: var(--orange-color);
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    line-height: 36px;
+    padding: 0;
+    border-radius: 35px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .backToTop i{
+    color: white;
+    font-size: 18px;
+  }
+
+  .backToTop .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
