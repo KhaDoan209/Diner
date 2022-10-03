@@ -1,85 +1,83 @@
 @import url(./root.css);
 
-.darkMode{
-    background-color: white;
+.darkMode {
+  background-color: white;
 }
 
 /* Header Dark Mode */
 
 .darkMode .fa-sun {
-    display: none;
-  }
-
-.darkMode .fa-moon {
-    display: block;
-  }
-
-.darkMode .navbar__right input{
-    background-color: white;
-    border: none;
+  display: none;
 }
 
-.darkMode .navbar__right .fa-search{
-    color: var(--bg-color);
+.darkMode .fa-moon {
+  display: block;
+}
+
+.darkMode .navbar__right input {
+  background-color: white;
+  border: none;
+}
+
+.darkMode .navbar__right .fa-search {
+  color: var(--bg-color);
 }
 
 /* About Us Dark Mode */
-.darkMode .about__left .title__2{
-    color: var(--bg-color);
+.darkMode .about__left .title__2 {
+  color: var(--bg-color);
 }
 
-.darkMode .about__right p{
-    color: var(--bg-color);
+.darkMode .about__right p {
+  color: var(--bg-color);
 }
 
 /* Marketing Dark Mode */
 
-.darkMode .marketing__content .title__2{
-    color: var(--bg-color);
+.darkMode .marketing__content .title__2 {
+  color: var(--bg-color);
 }
 
-.darkMode .marketing__sub .sub__title{
-    color: var(--bg-color);
+.darkMode .marketing__sub .sub__title {
+  color: var(--bg-color);
 }
 
 /* Category Dark Mode */
 
-.darkMode .category{
-    background-color: #f7f7f7;
+.darkMode .category {
+  background-color: #f7f7f7;
 }
 
-.darkMode .category__title .title__2{
-    color: var(--bg-color);
+.darkMode .category__title .title__2 {
+  color: var(--bg-color);
 }
 
 /* Features Dark Mode */
 
-.darkMode .features .item__wrap{
-    background: white;
-    border: 1px solid #eee;
-    
+.darkMode .features .item__wrap {
+  background: white;
+  border: 1px solid #eee;
 }
 
-.features__item .header__icon {
-    background-color: rgba(130, 115, 252, .05);
-  }
-.features__item:hover .header__icon > i {
-    color: white;
-  }
-
-.darkMode .item__header .infor p{
-    color: var(--bg-color);
+.darkMode .features__item .header__icon {
+  background-color: rgba(130, 115, 252, 0.05);
+}
+.darkMode .features__item:hover .header__icon > i {
+  color: white;
 }
 
-.darkMode .item__wrap .item__content p{
-    color: rgba(22, 28, 45, 0.7);
+.darkMode .item__header .infor p {
+  color: var(--bg-color);
 }
 
-.darkMode .item__header .infor h4 a{
-    color: var(--bg-color);
+.darkMode .item__wrap .item__content p {
+  color: rgba(22, 28, 45, 0.7);
+}
+
+.darkMode .item__header .infor h4 a {
+  color: var(--bg-color);
 }
 
 .darkMode .item__header .infor h4 a:hover {
-    color: var(--orange-color);
-  }
-
+  color: var(--orange-color);
+}
