@@ -93,6 +93,10 @@ header {
   padding: 1px 0;
 }
 
+.navbar__lightMode:hover {
+  cursor: pointer;
+}
+
 .navbar__lightMode i {
   color: var(--white-color);
   font-size: 25px;
@@ -218,7 +222,7 @@ header {
 
 /* Header Responsive  */
 
-@media screen and (max-width: 1190px){
+@media screen and (max-width: 1190px) {
   .header__infor h3 {
     font-size: 48px;
     line-height: 58px;
@@ -233,14 +237,13 @@ header {
 }
 
 @media screen and (max-width: 800px) {
-  header{
+  header {
     min-height: 600px;
   }
-  header .container{
+  header .container {
     margin-top: 60px;
   }
 }
-
 
 @media screen and (max-width: 600px) {
   .navbar__right .navbar__search {
@@ -255,10 +258,10 @@ header {
 }
 
 @media screen and (max-width: 480px) {
-  header{
+  header {
     min-height: 450px;
   }
-  .header__infor{
+  .header__infor {
     max-width: 500px;
     margin-top: 30px;
   }
