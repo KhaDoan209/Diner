@@ -1,0 +1,51 @@
+@import url(./root.css);
+
+.banner{
+    background: url(../img/banner2.jpg) no-repeat center;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+}
+
+.banner::before{
+    content: "";
+    background: rgb(16 15 19 / 66%);
+    position: absolute;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}   
+
+.banner__greet{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.banner__greet h3{
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    max-width: 800px;
+}
+
+.banner__btn a:nth-child(1){
+    color: white;
+}
+
+.banner__btn a:nth-child(1):hover{
+    background: white;
+    color: var(--orange-color);
+    border-color: white;
+}
+
+.banner__btn a:nth-child(2){
+    border-color: var(--orange-color);
+    background-color: var(--orange-color);
+    color: white;
+}
+
+.banner__btn a:nth-child(2):hover{
+    opacity: 0.8;
+}
