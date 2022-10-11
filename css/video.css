@@ -1,0 +1,62 @@
+@import url(./root.css);
+
+.video {
+  background-color: var(--bg-color);
+}
+.video__content {
+  background: url(../img/banner3.jpg) no-repeat center;
+  background-size: cover;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+  min-height: 500px;
+  border-radius: var(--border-radius);
+}
+
+.video__content::before {
+  content: "";
+  background: rgb(16 15 19 / 60%);
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: var(--border-radius);
+  position: absolute;
+}
+
+.video__icon{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: white;
+    line-height: 76px;
+    font-size: 26px;
+    padding-left: 2px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    color: var(--orange-color);
+    border: transparent;
+    animation: ripple 1s linear infinite;
+} 
+
+#small-dialog iframe{
+  width: 100%;
+  height: 420px;
+  display: block;
+  border-radius: 10px;
+}
+
+
+
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+  }
+}

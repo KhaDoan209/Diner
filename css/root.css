@@ -58,7 +58,7 @@
     position: fixed;
     bottom: 55px;
     right: 20px;
-    z-index: 99;
+    z-index: 10;
     border: none;
     outline: none;
     width: 50px;
