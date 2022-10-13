@@ -1,0 +1,65 @@
+@import url(./root.css);
+
+.testimonial__header h6 {
+  color: var(--orange-color);
+}
+.testimonial__item {
+  max-width: 700px;
+  margin: auto;
+}
+.testimonial__item a {
+  left: 0;
+  top: 0;
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.testimonial__item blockquote q::before {
+  font-size: 50px;
+  color: var(--orange-color);
+  display: block;
+  font-family: initial;
+}
+
+.testimonial__item blockquote q {
+  font-size: 24px;
+  line-height: 36px;
+  color: #eee;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.testimonial__item p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color-1);
+}
+
+.testimonial__infor .align-self h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.testimonial__infor p {
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 0;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.testimonial__body .owl-item {
+  margin-bottom: 25px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: var(--orange-color);
+}
