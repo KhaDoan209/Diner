@@ -27,6 +27,19 @@
             integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="./css/magnific-popup.css">
+
+        <!-- Swiper  -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+            integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <!-- Main CSS -->
         <link rel="stylesheet" href="./css/index-darkMode.css">
         <link rel="stylesheet" href="./css/navbar.css">
@@ -34,6 +47,11 @@
         <link rel="stylesheet" href="./css/marketing.css">
         <link rel="stylesheet" href="./css/category.css">
         <link rel="stylesheet" href="./css/features.css">
+        <link rel="stylesheet" href="./css/banner.css">
+        <link rel="stylesheet" href="./css/stat.css">
+        <link rel="stylesheet" href="./css/video.css">
+        <link rel="stylesheet" href="./css/blog.css">
+        <link rel="stylesheet" href="./css/testimonial.css">
     </head>
 
     <body id="pageBody" class="lightMode">
@@ -366,10 +384,256 @@
                 </div>
             </div>
         </section>
-        <section class="stat"></section>
-        <section class="video"></section>
-        <section class="blog"></section>
-        <section class="testimonial"></section>
+
+        <section class="banner py-5">
+            <div class="container pt-lg-2 pb-lg-4 py-4">
+                <div class="banner__greet text-center py-lg-5">
+                    <h3 class="title_2 px-lg-5">Deliciousness jumping into the mouth.</h3>
+                    <div class="banner__btn pb-lg-5">
+                        <a href="#" class="btn button mt-sm-5 mt-4 mr-lg-4 mr-2">Read More <span
+                                class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                        <a href="#" class="btn button mt-sm-5 mt-4">Contact Us <span class="fa fa-chevron-right ml-2"
+                                aria-hidden="true"></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stat py-lg-0 py-md-5 py-4">
+            <div class="container">
+                <div class="stat__content">
+                    <div class="row text-center">
+                        <div class="col-6 col-md-3 mt-4 mt-md-0">
+                            <div class="stat__counter">
+                                <i class="fa-solid fa-building"></i>
+                                <div class="counter__number counter mt-3" data-to="15100" data-speed="1500">15,100</div>
+                                <p class="counter__text">Branches</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 mt-4 mt-md-0">
+                            <div class="stat__counter">
+                                <i class="fa-solid fa-utensils"></i>
+                                <div class="counter__number counter mt-3" data-to="15100" data-speed="1500">15,256</div>
+                                <p class="counter__text">Food Items</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 mt-4 mt-md-0">
+                            <div class="stat__counter">
+                                <i class="fa-solid fa-users"></i>
+                                <div class="counter__number counter mt-3" data-to="15100" data-speed="1500">12,100</div>
+                                <p class="counter__text">Chefs</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 mt-4 mt-md-0">
+                            <div class="stat__counter">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <div class="counter__number counter mt-3" data-to="15100" data-speed="1500">2,560</div>
+                                <p class="counter__text">Happy Customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video py-5">
+            <div class="container py-lg-5">
+                <div class="video__content position-relative">
+                    <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center pl-3">
+                        <span class="video__icon">
+                            <span class="fa fa-play"></span>
+                        </span>
+                    </a>
+                </div>
+
+                <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                    <div class="agileits_modal_body">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/305185528?h=195bf3cba0"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog py-5">
+            <div class="container py-2 py-md-5">
+                <div class="blog__title text-center">
+                    <h6 class="title">Latest Posts</h6>
+                    <h3 class="title__2">Blog Posts</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 item mt-5">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#"><img class="card-img-bottom d-block" src="./img/banner1.jpg" alt=""></a>
+                                <div class="card__pos">
+                                    <a class="card__pos__left" href="#">Reciepe</a>
+                                    <span class="card__pos__right"><i class="fa-regular fa-clock mr-2"></i>10 Min
+                                        Cook</span>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <a href="#" class="card__desc">The Best Cookie Recipes To Bake This Weekend
+                                </a>
+                                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                                    vitae sit.</p>
+                                <div class="card__footer mt-3">
+                                    <div class="card__footer__infor">
+                                        <a href="#" class="infor__img">
+                                            <img src="./img/team1.jpg" alt="" class="img-fluid">
+                                        </a>
+                                        <a href="#">Rashed Kabir</a>
+                                    </div>
+                                    <a href="#" class="infor__read">Read More <span class="fa fa-chevron-right ml-2"
+                                            aria-hidden="true"></span></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item mt-5">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#"><img class="card-img-bottom d-block" src="./img/banner3.jpg" alt=""></a>
+                                <div class="card__pos">
+                                    <a class="card__pos__left" href="#">Soup</a>
+                                    <span class="card__pos__right"><i class="fa-regular fa-clock mr-2"></i>10 Min
+                                        Cook</span>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <a href="#" class="card__desc">The Best Cookie Recipes To Bake This Weekend
+                                </a>
+                                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                                    vitae sit.</p>
+                                <div class="card__footer mt-3">
+                                    <div class="card__footer__infor">
+                                        <a href="#" class="infor__img">
+                                            <img src="./img/team2.jpg" alt="" class="img-fluid">
+                                        </a>
+                                        <a href="#">Jannatul Ferdous</a>
+                                    </div>
+                                    <a href="#" class="infor__read">Read More <span class="fa fa-chevron-right ml-2"
+                                            aria-hidden="true"></span></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item mt-5">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#"><img class="card-img-bottom d-block" src="./img/banner1.jpg" alt=""></a>
+                                <div class="card__pos">
+                                    <a class="card__pos__left" href="#">Drinks</a>
+                                    <span class="card__pos__right"><i class="fa-regular fa-clock mr-2"></i>10 Min
+                                        Cook</span>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <a href="#" class="card__desc">The Best Cookie Recipes To Bake This Weekend
+                                </a>
+                                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                                    vitae sit.</p>
+                                <div class="card__footer mt-3">
+                                    <div class="card__footer__infor">
+                                        <a href="#" class="infor__img">
+                                            <img src="./img/team3.jpg" alt="" class="img-fluid">
+                                        </a>
+                                        <a href="#">Rashed Kabir</a>
+                                    </div>
+                                    <a href="#" class="infor__read">Read More <span class="fa fa-chevron-right ml-2"
+                                            aria-hidden="true"></span></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="testimonial py-5">
+
+            <div class="container py-md-3 py-lg-5">
+                <div class="testimonial-content">
+                    <div class="testimonial__header text-center mb-5">
+                        <h6 class="title">Testimonials</h6>
+                        <h3 class="title__2">What People Say</h3>
+                    </div>
+                    <div class="testimonial__body owl-carousel owl-theme owl-loaded">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage text-center">
+                                <div class="owl-item">
+                                    <div class="testimonial__item">
+                                        <a href="#"><img src="./img/team1.jpg" alt=""></a>
+                                        <blockquote>
+                                            <q>OMG! I cannot believe. It's Awesome</q>
+                                        </blockquote>
+                                        <p>My new site is so much faster and easier to work with than my old site. They
+                                            are
+                                            here to
+                                            help the customers to get their success. Nemo sit eos, quod minus eius illo
+                                            labore.
+                                            Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                        <div class="testimonial__infor text-center mt-4">
+                                            <div class="align-self">
+                                                <h3>Johnson william</h3>
+                                                <p class="text-center">Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="testimonial__item">
+                                        <a href="#"><img src="./img/team2.jpg" alt=""></a>
+                                        <blockquote>
+                                            <q>Simply the best. Better than all the rest</q>
+                                        </blockquote>
+                                        <p>My new site is so much faster and easier to work with than my old site. They
+                                            are
+                                            here to
+                                            help the customers to get their success. Nemo sit eos, quod minus eius illo
+                                            labore.
+                                            Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                        <div class="testimonial__infor text-center mt-4">
+                                            <div class="align-self">
+                                                <h3>Alexander sakura</h3>
+                                                <p class="text-center">Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="testimonial__item">
+                                        <a href="#"><img src="./img/team3.jpg" alt=""></a>
+                                        <blockquote>
+                                            <q>OMG! I cannot believe. It's Awesome</q>
+                                        </blockquote>
+                                        <p>My new site is so much faster and easier to work with than my old site. They
+                                            are
+                                            here to
+                                            help the customers to get their success. Nemo sit eos, quod minus eius illo
+                                            labore.
+                                            Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                        <div class="testimonial__infor text-center mt-4">
+                                            <div class="align-self">
+                                                <h3>Johnson willson</h3>
+                                                <p class="text-center">Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <footer></footer>
         <div class="backToTop">
             <button class="button cd-top text-replace js-cd-top">
@@ -384,15 +648,65 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
             integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
-            <!-- Bootstrap -->
+
+        <!-- Waypoints -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+            integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <!-- Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q42Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
             crossorigin="anonymous"></script>
 
-            <!-- Back To Top  -->
-            <script src="./js/main.js"></script>
-            <script src="./js/util.js"></script>
+        <!-- Counting Up -->
+        <script src="./js/jquery.countup.js"></script>
+        <script>
+            $('.counter').countUp({
+                'time': 3000,
+                'delay': 10
+            });
+        </script>
+
+        <!-- Magnific Popup core JS file -->
+        <script src="./js/jquery.magnific-popup.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".popup-with-zoom-anim").magnificPopup({
+                    type: "inline",
+                    fixedContentPos: false,
+                    fixedBgPos: true,
+                    overflowY: "auto",
+                    closeBtnInside: true,
+                    preloader: false,
+                    midClick: true,
+                    removalDelay: 300,
+                    mainClass: "my-mfp-zoom-in"
+                });
+            });
+        </script>
+
+        <!-- Owl Carousel  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                dots: true,
+                items: 1
+            });
+        </script>
+
+
+        <!-- Back To Top  -->
+        <script src="./js/main.js"></script>
+        <script src="./js/util.js"></script>
+
     </body>
 
 </html>

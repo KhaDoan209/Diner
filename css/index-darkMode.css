@@ -7,11 +7,16 @@
 /* Header Dark Mode */
 
 .darkMode .fa-sun {
+  opacity: 0;
   display: none;
 }
 
-.darkMode .fa-moon {
+.darkMode .navbar__lightMode .fa-moon {
+  visibility: visible;
+  opacity: 1;
   display: block;
+  position: absolute;
+  top: 50px;
 }
 
 .darkMode .navbar__right input {
