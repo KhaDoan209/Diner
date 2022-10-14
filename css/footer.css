@@ -1,0 +1,106 @@
+@import url(./root.css);
+
+footer {
+  background-color: black;
+}
+
+.footer__logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.footer__logo a:hover {
+  color: var(--orange-color);
+}
+
+.footer__content1 p {
+  font-size: 17px;
+  line-height: 26px;
+  color: #a5a2a1;
+  font-family: var(--quicksand);
+}
+
+.footer__social a {
+  margin-right: 10px;
+  color: var(--orange-color);
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  background: var(--bg-color);
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: var(--border-radius);
+  transition: all 0.3s;
+}
+.footer__social a:hover {
+  background: var(--orange-color);
+  color: white;
+}
+
+.footer__above h6 {
+  font-family: var(--quicksand);
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  position: relative;
+  color: #fff;
+}
+
+.footer__content2 li,
+.footer__content3 li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer__content2 li a,
+.footer__content3 li a {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 26px;
+  color: #a5a2a1;
+  font-family: var(--quicksand);
+}
+
+.footer__content2 li a:hover,
+.footer__content3 li a:hover {
+  color: var(--orange-color);
+}
+
+.footer__content4 {
+  font-family: var(--quicksand);
+}
+
+.footer__content4 p {
+  font-size: 17px;
+  line-height: 26px;
+  color: #a5a2a1;
+}
+
+.footer__content4 input {
+  padding: 14px 20px;
+  font-size: 18px;
+  line-height: 28px;
+  border: 1px solid transparent;
+  outline: none;
+  width: 100%;
+  background: var(--bg-color);
+  border-radius: var(--border-radius);
+  color: var(--text-color-1);
+}
+.footer__content4 input:focus {
+  border-color: var(--orange-color);
+}
+
+.footer__content4 button {
+  background: var(--orange-color);
+  color: white;
+  border: 2px solid var(--orange-color);
+  font-weight: 700;
+  transition: all 0.3 ease-in;
+}
+.footer__content4 button:hover {
+  opacity: 0.8;
+}

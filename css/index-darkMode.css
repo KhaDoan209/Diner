@@ -3,6 +3,14 @@
 .darkMode {
   background-color: white;
 }
+.darkMode h1,
+.darkMode h2,
+.darkMode h3,
+.darkMode h4,
+.darkMode h5 {
+  font-family: var(--quicksand);
+  color: black;
+}
 
 /* Header Dark Mode */
 
@@ -85,4 +93,50 @@
 
 .darkMode .item__header .infor h4 a:hover {
   color: var(--orange-color);
+}
+
+/* stat dark mode */
+
+.darkMode .stat__counter {
+  background-color: white;
+}
+
+.darkMode .stat__counter .counter__number {
+  color: black;
+}
+
+.darkMode .stat__counter .counter__text {
+  color: rgba(22, 28, 45, 0.7);
+}
+
+/* video dark mode */
+
+.darkMode .video {
+  background: white;
+}
+
+/* blog dark mode */
+
+.darkMode .blog {
+  background: white;
+}
+
+.darkMode .card__desc,
+.darkMode .card-body p,
+.darkMode .card__footer a {
+  color: black;
+}
+
+.darkMode .card__desc:hover {
+  color: black;
+}
+
+/* testimonial dark mode */
+
+.darkMode .testimonial__item blockquote q {
+  color: black;
+}
+
+.darkMode .testimonial__item p {
+  color: rgba(22, 28, 45, 0.7);
 }
