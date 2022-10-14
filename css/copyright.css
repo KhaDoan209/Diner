@@ -1,0 +1,37 @@
+@import url(./root.css);
+
+.copyright {
+  background: #000;
+  padding: 1.2em 0;
+  border-top: 1px solid rgb(255 255 255 / 5%);
+}
+
+.copyright .copyright__left {
+  align-self: center;
+  color: #ddd;
+  font-size: 17px;
+}
+
+.copyright__left a {
+  text-decoration: none;
+  color: var(--orange-color);
+}
+
+.copyright__left a:hover {
+  color: var(--text-color-1);
+}
+
+.copyright__right li {
+  list-style: none;
+}
+
+.copyright__right a {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 26px;
+  color: #a5a2a1;
+}
+
+.copyright__right a:hover {
+  color: var(--orange-color);
+}

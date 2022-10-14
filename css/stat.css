@@ -1,41 +1,43 @@
 @import url(./root.css);
 
-.stat{
-margin-top: -70px;
-z-index: 10;
-position: relative;
+.stat {
+  margin-top: -70px;
+  z-index: 10;
+  position: relative;
 }
 
-.stat__counter{
-   background-color: var(--bg-color);
-   box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px; 
-   padding: 40px 20px;
-   border-radius: var(--border-radius);
-   transition: all 0.3s ease;
+.stat__counter {
+  background-color: var(--bg-color);
+  box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+  padding: 40px 20px;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
 }
-.stat__counter:hover{
-    transform: translateY(-0.25rem);
-    box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
-}
-
-.stat__counter i{
-    background: var(--orange-color);
-    font-size: 26px;
-    border-radius: 56%;
-    width: 68px;
-    height: 68px;
-    line-height: 68px;
-    color: white;
+.stat__counter:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
 }
 
-.stat__counter .counter__number{
-    font-size: 2.6rem;
-    font-weight: 600;
-    color: white;
+.stat__counter i {
+  background: var(--orange-color);
+  font-size: 26px;
+  border-radius: 56%;
+  width: 68px;
+  height: 68px;
+  line-height: 68px;
+  color: white;
 }
 
-.stat__counter .counter__text{
-    text-transform: capitalize;
-    color: var(--text-color-1);
-    font-weight: 600;
+.stat__counter .counter__number {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: white;
+}
+
+.stat__counter .counter__text {
+  text-transform: capitalize;
+  color: var(--text-color-1);
+  font-weight: 600;
+  font-family: var(--quicksand);
+  font-size: 1.1rem;
 }

@@ -1,123 +1,172 @@
 @import url(./root.css);
 
-.blog{
-    background-color: #282828;
+.blog {
+  background-color: #282828;
 }
 
-.blog__title .title{
-    color: var(--orange-color);
+.blog__title .title {
+  color: var(--orange-color);
 }
 
-.blog .card{
-position: relative;
-word-wrap: break-word;
-background-color: transparent;
-background-clip: border-box;
-border: none;
-border-radius: 0;
+.blog .card {
+  position: relative;
+  word-wrap: break-word;
+  background-color: transparent;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0;
 }
 
-.card-header img{
-    border-radius: var(--border-radius);
-} 
+.card-header img {
+  border-radius: var(--border-radius);
+}
 
 .card__pos {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
-.card__pos a{
-    text-decoration: none;
+.card__pos a {
+  text-decoration: none;
 }
-.card__pos a:hover{
-    color: white;
-}
-
-.card__pos__left{
-    background: var(--orange-color);
-    color: white;
-    padding: 3px 20px;
-    border-radius: 35px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    display: inline-block;
-    letter-spacing: .05em;   
-    font-size: 12px;
+.card__pos a:hover {
+  color: white;
 }
 
-.card__pos__right{
-    opacity: 1;
-    color: white;
-    margin-left: 10px;
-    font-size: 15px;
-    letter-spacing: .02em;
+.card__pos__left {
+  background: var(--orange-color);
+  color: white;
+  padding: 3px 20px;
+  border-radius: 35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: inline-block;
+  letter-spacing: 0.05em;
+  font-size: 12px;
 }
 
-.card-body a{
-    text-decoration: none;
+.card__pos__right {
+  opacity: 1;
+  color: white;
+  margin-left: 10px;
+  font-size: 15px;
+  letter-spacing: 0.02em;
 }
 
-.card-body a:hover{
-    color: white;
+.card-body a {
+  text-decoration: none;
 }
 
-.card__desc{
- display: block;
- font-size: 24px;
- line-height: 34px;
- font-weight: 600;
- color: white;
- text-decoration: none;
- margin-top: 25px;
- margin-bottom: 15px;
- transition: 0.3 ease;
+.card-body a:hover {
+  color: white;
 }
 
-.card-body p{
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--text-color-1);
-    font-family: var(--quicksand);
+.card__desc {
+  display: block;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  transition: 0.3 ease;
 }
 
-.card__footer{
-    display: grid;
-    grid-auto-flow:column;
-    justify-content: space-between;
-    align-items: center;
+.card-body p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color-1);
+  font-family: var(--quicksand);
 }
 
-.card__footer__infor{
-    display: grid;
-    align-items: center;
-    grid-auto-flow: column;
-    gap: 10px;
-    justify-content: flex-start;
+.card__footer {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card__footer__infor a{
-    font-weight: 700;
-    color: white;
-    letter-spacing: .02em;
-}
-.card__footer__infor img{
-    width: 40px;
-    height: 40px;
-    display: block;
-    overflow: hidden;
-    border-radius: 50%;
+.card__footer__infor {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  gap: 10px;
+  justify-content: flex-start;
+  font-family: var(--quicksand);
 }
 
-.card__footer .infor__read{
-    text-decoration: none;
-    color: white;
+.card__footer__infor a {
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.02em;
+}
+.card__footer__infor img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.card__footer .infor__read {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.9;
+  font-family: var(--quicksand);
+}
+.card__footer .infor__read:hover {
+  color: var(--orange-color);
+}
+
+/* Blog Responsive  */
+
+@media screen and (max-width: 1080px) {
+  .blog__title h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .card__desc {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog__title h3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .blog__title h6 {
     font-size: 16px;
-    font-weight: 700;
-    opacity: .9;
+  }
+  .card-body p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
-.card__footer .infor__read:hover{
-    color: var(--orange-color);
+
+@media screen and (max-width: 480px) {
+  .blog__title h3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .blog__title h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .blog__title h6 {
+    letter-spacing: 0.5px;
+  }
 }
