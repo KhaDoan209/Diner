@@ -3,14 +3,6 @@
 .darkMode {
   background-color: white;
 }
-.darkMode h1,
-.darkMode h2,
-.darkMode h3,
-.darkMode h4,
-.darkMode h5 {
-  font-family: var(--quicksand);
-  color: black;
-}
 
 /* Header Dark Mode */
 
@@ -120,7 +112,7 @@
 .darkMode .blog {
   background: white;
 }
-
+.darkMode .blog__title h3,
 .darkMode .card__desc,
 .darkMode .card-body p,
 .darkMode .card__footer a {
@@ -133,10 +125,18 @@
 
 /* testimonial dark mode */
 
-.darkMode .testimonial__item blockquote q {
+.darkMode .testimonial__item blockquote q,
+.darkMode .testimonial__header h3 {
   color: black;
 }
 
 .darkMode .testimonial__item p {
   color: rgba(22, 28, 45, 0.7);
+}
+
+/* footer dark mode  */
+
+.darkMode .footer__social a,
+.darkMode .footer__content4 input {
+  background: white;
 }
