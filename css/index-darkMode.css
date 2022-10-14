@@ -132,6 +132,7 @@
   color: black;
 }
 
+.darkMode .card__footer a:hover,
 .darkMode .card__desc:hover {
   color: black;
 }
