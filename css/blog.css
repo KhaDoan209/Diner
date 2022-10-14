@@ -123,3 +123,50 @@
 .card__footer .infor__read:hover {
   color: var(--orange-color);
 }
+
+/* Blog Responsive  */
+
+@media screen and (max-width: 1080px) {
+  .blog__title h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .card__desc {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog__title h3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .blog__title h6 {
+    font-size: 16px;
+  }
+  .card-body p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blog__title h3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .blog__title h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .blog__title h6 {
+    letter-spacing: 0.5px;
+  }
+}

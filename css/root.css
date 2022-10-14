@@ -1,81 +1,80 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    line-height: 1.5;
-    background-color: var(--bg-color);
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  line-height: 1.5;
+  background-color: var(--bg-color);
+}
 
 :root {
-    --orange-color: #ff6600;
-    --border-radius: 6px;
-    --bg-color: #232220;
-    --text-color-1: #c2d0da;
-    --white-color: #ffff;
-    --quicksand: "Quicksand", sans-serif;
-    --pacifico: "Pacifico", cursive;
-  }
+  --orange-color: #ff6600;
+  --border-radius: 6px;
+  --bg-color: #232220;
+  --text-color-1: #c2d0da;
+  --white-color: #ffff;
+  --quicksand: "Quicksand", sans-serif;
+  --pacifico: "Pacifico", cursive;
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: var(--quicksand);
-    color: white;
-  }
-  
-  .title {
-    font-family: var(--pacifico);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    display: block;
-    letter-spacing: 1px;
-  }
-  
-  .title__2 {
-    font-size: 38px;
-    line-height: 48px;
-    font-weight: 600;
-  }
-  
-  .button {
-    padding: 12px 45px;
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 700;
-    transition: 0.3s ease-in;
-    border: 2px solid;
-    border-radius: var(--border-radius);
-  }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--quicksand);
+  color: white;
+}
 
-  .backToTop .button{
-    background-color: var(--orange-color);
-    position: fixed;
-    bottom: 55px;
-    right: 20px;
-    z-index: 10;
-    border: none;
-    outline: none;
-    width: 50px;
-    height: 50px;
-    line-height: 36px;
-    padding: 0;
-    border-radius: 35px;
-    visibility: hidden;
-    opacity: 0;
-  }
-  .backToTop i{
-    color: white;
-    font-size: 18px;
-  }
+.title {
+  font-family: var(--pacifico);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  display: block;
+  letter-spacing: 1px;
+}
 
-  .backToTop .cd-top--is-visible {
-    visibility: visible;
-    opacity: 1;
-  }
+.title__2 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.button {
+  padding: 12px 45px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  transition: 0.3s ease-in;
+  border: 2px solid;
+  border-radius: var(--border-radius);
+}
+
+.backToTop .button {
+  background-color: var(--orange-color);
+  position: fixed;
+  bottom: 55px;
+  right: 40px;
+  z-index: 10;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  line-height: 36px;
+  padding: 0;
+  border-radius: 35px;
+  visibility: hidden;
+  opacity: 0;
+}
+.backToTop i {
+  color: white;
+  font-size: 18px;
+}
+
+.backToTop .cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}

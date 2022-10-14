@@ -106,3 +106,65 @@ footer {
 .footer__content4 button:hover {
   opacity: 0.8;
 }
+
+/* Footer css */
+
+@media screen and (max-width: 992px) {
+  .footer__above h6 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .copyright .copyright__left,
+  .footer__social {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .testimonial__item blockquote q {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonial__header h3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .testimonial__header h6 {
+    font-size: 16px;
+  }
+  .testimonial__item p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testimonial__header h3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .testimonial__header h6 {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .testimonial__item .blockquote q {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .testimonial__header h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .testimonial__header h6 {
+    letter-spacing: 0.5px;
+  }
+}
