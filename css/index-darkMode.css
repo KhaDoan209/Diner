@@ -19,6 +19,19 @@
   top: 50px;
 }
 
+/* moon icon responsive  */
+
+@media screen and (max-width: 992px) {
+  .darkMode .navbar__lightMode .fa-moon {
+    top: 48px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .darkMode .navbar__lightMode .fa-moon {
+    top: 108px;
+  }
+}
 .darkMode .navbar__right input {
   background-color: white;
   border: none;
