@@ -55,6 +55,7 @@ div#small-dialog iframe {
 .mfp-close-btn-in .mfp-close {
   color: #fff;
 }
+
 .mfp-close,
 .mfp-close:active {
   top: -35px;
@@ -90,7 +91,9 @@ div#small-dialog iframe {
 .my-mfp-zoom-in.mfp-removing.mfp-bg {
   opacity: 0;
 }
-
+.mfp-container {
+  padding: 0;
+}
 @keyframes ripple {
   0% {
     box-shadow: 0 0 0 0 rgb(255 255 255 / 25%),
@@ -100,5 +103,77 @@ div#small-dialog iframe {
   100% {
     box-shadow: 0 0 0 10px rgb(255 255 255 / 25%),
       0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+  }
+}
+
+/* Video responsive */
+
+@media screen and (max-width: 768px) {
+  .mfp-close,
+  .mfp-close:active {
+    top: -18px;
+    right: -13px;
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .mfp-inline-holder .mfp-content {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .mfp-close,
+  .mfp-close:active {
+    top: 26px;
+    right: -10px;
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .mfp-inline-holder .mfp-content {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mfp-close,
+  .mfp-close:active {
+    top: 45px;
+    right: -8px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+ .mfp-close,
+  .mfp-close:active {
+    top: 81px;
+    right: -8px;
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (max-width: 376px) {
+  .mfp-close,
+  .mfp-close:active {
+    top: 92px;
+    right: -8px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .mfp-container{
+    left: 11px;
+  }
+  .mfp-close,
+  .mfp-close:active {
+    top: 113px;
+    right: -10px;
+    font-size: 15px;
   }
 }
