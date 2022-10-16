@@ -28,7 +28,7 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Magnific Popup core CSS file -->
-        <link rel="stylesheet" href="./css/magnific-popup.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 
         <!-- Swiper  -->
         <link rel="stylesheet"
@@ -441,7 +441,7 @@
         <section class="video py-5">
             <div class="container py-lg-5">
                 <div class="video__content position-relative">
-                    <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center pl-3">
+                    <a href="#small-dialog" class="open-popup-link popup-with-zoom-anim text-center pl-3">
                         <span class="video__icon">
                             <span class="fa fa-play"></span>
                         </span>
@@ -449,10 +449,8 @@
                 </div>
 
                 <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-                    <div class="agileits_modal_body">
-                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/305185528?h=195bf3cba0"
-                            frameborder="0" allowfullscreen></iframe>
-                    </div>
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/305185528?h=195bf3cba0"
+                        frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
                 </div>
             </div>
         </section>
@@ -754,7 +752,8 @@
         </script>
 
         <!-- Magnific Popup core JS file -->
-        <script src="./js/jquery.magnific-popup.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
         <script>
             $(document).ready(function () {
                 $(".popup-with-zoom-anim").magnificPopup({
